@@ -10,6 +10,7 @@ body {
 }
 
 header {
+  margin: 60px 0;
 }
 
 h1 {
@@ -18,23 +19,26 @@ h1 {
   font-size: 5rem;
 }
 
+.introduction {
+  margin: 40px 0;
+  h1 {
+    margin: 0 0 0 -6px;
+  }
+  .subheadline {
+    font-size: 2rem;
+    margin-top: -12px;
+  }
+}
+
 .definition {
   margin: 20px 0;
+  .definition-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
 }
 
 @keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-ms-keyframes move-twink-back {
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
 }
@@ -43,43 +47,32 @@ h1 {
     from {background-position:0 0;}
     to {background-position:10000px 0;}
 }
-@-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-@-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-@-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:10000px 0;}
-}
 
 .stars, .twinkling, .clouds {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .stars {
-  background: #000 url(images/stars.png) repeat top center;
-  z-index: -2;
+  background: black url("images/stars.png") repeat top center;
+  z-index: -3;
 }
 
 .twinkling{
-  background :transparent url(images/twinkling.png) repeat top center;
-  z-index: -1;
+  background :transparent url("images/twinkling.png") repeat top center;
+  z-index: -2;
   animation: move-twink-back 200s linear infinite;
 }
 
 .clouds{
-  background: transparent url(images/clouds.png) repeat top center;
+  background: transparent url("images/clouds.png") repeat top center;
   z-index: 0;
   animation: move-clouds-back 200s linear infinite;
+  pointer-events: none;
 }
