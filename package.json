@@ -1,0 +1,26 @@
+{
+  "name": "candlewaster.co",
+  "version": "1.0.0",
+  "engines": {
+    "node": "4.4.x"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/harp server www",
+    "production": "./node_modules/.bin/harp server www --port $PORT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://code.candlewaster.co/alex/candlewaster.co.git"
+  },
+  "author": "Alex Gleason",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "http://code.candlewaster.co/alex/candlewaster.co/issues"
+  },
+  "homepage": "http://candlewaster.co",
+  "dependencies": {
+    "harp": "^0.20.3"
+  }
+}
