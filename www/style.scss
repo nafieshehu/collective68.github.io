@@ -1,6 +1,7 @@
 html {
   font-family: 'Slabo 27px', serif;
   color: white;
+  background: black;
 }
 
 body {
@@ -38,17 +39,17 @@ h1 {
   }
 }
 
-@keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+@keyframes twinkle {
+    from { background-position:0 0; }
+    to { background-position:-10000px 5000px; }
 }
 
-@keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+@keyframes clouds {
+    from { background-position:0 0; }
+    to { background-position:10000px 0; }
 }
 
-.stars, .twinkling, .clouds {
+.background, .starfield, .twinkle, .clouds {
   position: absolute;
   top: 0;
   left: 0;
@@ -57,22 +58,23 @@ h1 {
   width: 100%;
   height: 100%;
   display: block;
+  pointer-events: none;
 }
 
-.stars {
-  background: black url("images/stars.png") repeat top center;
+.starfield {
+  background: transparent url("images/starfield.svg") repeat top center;
+  opacity: 0.9;
   z-index: -3;
 }
 
-.twinkling{
-  background :transparent url("images/twinkling.png") repeat top center;
+.twinkle {
+  background :transparent url("images/twinkle.svg") repeat top center;
   z-index: -2;
-  animation: move-twink-back 200s linear infinite;
+  animation: twinkle 200s linear infinite;
 }
 
-.clouds{
+.clouds {
   background: transparent url("images/clouds.png") repeat top center;
   z-index: 0;
-  animation: move-clouds-back 200s linear infinite;
-  pointer-events: none;
+  animation: clouds 200s linear infinite;
 }
