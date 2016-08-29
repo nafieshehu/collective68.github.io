@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  width: 650px;
+  max-width: 650px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -23,11 +23,19 @@ h1 {
 .introduction {
   margin: 40px 0;
   h1 {
-    margin: 0 0 0 -6px;
+    font-size: 11.5vw;
+    margin: 0;
+    @media (min-width: 650px) {
+      margin-left: -6px;
+      font-size: 5rem;
+    }
   }
   .subheadline {
-    font-size: 2rem;
-    margin-top: -12px;
+    font-size: 6vw;
+    @media (min-width: 650px) {
+      font-size: 2rem;
+      margin-top: -12px;
+    }
   }
 }
 
