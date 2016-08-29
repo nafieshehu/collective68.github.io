@@ -62,19 +62,19 @@ h1 {
 }
 
 .starfield {
-  background: transparent url("images/starfield.svg") repeat top center;
+  background: transparent url("../images/starfield.svg") repeat top center;
   opacity: 0.9;
   z-index: -3;
 }
 
 .twinkle {
-  background :transparent url("images/twinkle.svg") repeat top center;
+  background :transparent url("../images/twinkle.svg") repeat top center;
   z-index: -2;
   animation: twinkle 200s linear infinite;
 }
 
 .clouds {
-  background: transparent url("images/clouds.png") repeat top center;
+  background: transparent url("../images/clouds.png") repeat top center;
   z-index: 0;
   animation: clouds 200s linear infinite;
 }
