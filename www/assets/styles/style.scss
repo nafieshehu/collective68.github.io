@@ -20,6 +20,23 @@ h1 {
   font-size: 5rem;
 }
 
+a.button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 20px 0;
+  transition: all 0.4s;
+  &:hover {
+    background: white;
+    color: black;
+  }
+}
+
 .introduction {
   margin: 40px 0;
   h1 {
