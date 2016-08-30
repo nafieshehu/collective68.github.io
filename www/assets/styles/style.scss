@@ -20,9 +20,12 @@ h1 {
   font-size: 5rem;
 }
 
+a {
+  color: white;
+}
+
 a.button {
   display: inline-block;
-  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
@@ -102,4 +105,10 @@ a.button {
   background: transparent url("../images/clouds.png") repeat top center;
   z-index: 0;
   animation: clouds 200s linear infinite;
+}
+
+body > footer {
+  margin: 40px 30px 40px 0;
+  font-size: 0.8rem;
+  opacity: 0.3;
 }
