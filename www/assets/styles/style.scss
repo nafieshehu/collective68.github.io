@@ -2,6 +2,9 @@ html {
   font-family: 'Slabo 27px', serif;
   color: white;
   background: black;
+  @media (min-width: 650px) {
+    font-size: 1.2rem;
+  }
 }
 
 body {
@@ -10,14 +13,33 @@ body {
   padding: 0 15px;
 }
 
-header {
-  margin: 60px 0;
+body > {
+  header {
+    margin: 50px 0;
+  }
+  section {
+    margin: 50px 0;
+    p {
+      line-height: 1.75;
+      background-color: black;
+      box-shadow: 0 0 30px 10px black;
+    }
+  }
+  footer {
+    margin: 40px 30px 40px 0;
+    font-size: 0.8rem;
+    opacity: 0.3;
+  }
 }
 
 h1 {
   font-family: 'Alice', serif;
   text-transform: uppercase;
   font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 a {
@@ -78,7 +100,6 @@ a.button {
 }
 
 .background, .starfield, .twinkle, .clouds {
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -87,6 +108,15 @@ a.button {
   height: 100%;
   display: block;
   pointer-events: none;
+}
+
+.background {
+  position: fixed;
+  z-index: -1;
+}
+
+.starfield, .twinkle, .clouds {
+  position: absolute;
 }
 
 .starfield {
@@ -107,8 +137,10 @@ a.button {
   animation: clouds 200s linear infinite;
 }
 
-body > footer {
-  margin: 40px 30px 40px 0;
-  font-size: 0.8rem;
-  opacity: 0.3;
+blockquote {
+  margin: 60px;
+  font-size: 2rem;
+  @media (max-width: 650px) {
+    margin: 60px 20px;
+  }
 }
