@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+http://code.candlewaster.co/alex/candlewaster.co.git"
+    "url": "git+https://notabug.org/candlewaster/candlewaster-website.git"
   },
   "author": "Alex Gleason",
   "license": "CC-BY-SA-4.0",
   "bugs": {
-    "url": "http://code.candlewaster.co/alex/candlewaster.co/issues"
+    "url": "https://notabug.org/candlewaster/candlewaster-website/issues"
   },
-  "homepage": "http://candlewaster.co",
+  "homepage": "https://candlewaster.co",
   "dependencies": {
     "harp": "^0.20.3"
   }
