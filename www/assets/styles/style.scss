@@ -157,9 +157,6 @@ blockquote {
   margin: 40px 0;
   padding: 0 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  @media (max-width: 650px) {
-    margin: 60px 20px;
-  }
 }
 
 .team {
