@@ -86,6 +86,7 @@ a.full-link {
   }
   .subheadline {
     font-size: 5.5vw;
+    font-weight: normal;
     @media (min-width: 650px) {
       font-size: 2rem;
       margin-top: -12px;
@@ -161,13 +162,13 @@ blockquote {
 
 .team {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .member-listing {
   position: relative;
-  margin: 0.5rem 0;
+  margin: 0.5rem;
   transition: all 0.5s;
   overflow: hidden;
   h3, .job-title {
@@ -184,16 +185,31 @@ blockquote {
     margin-bottom: 0.5rem;
   }
   .photo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background-color: #ccc;
     background-size: cover;
     background-position: center;
     filter: grayscale(100%);
+    @media (min-width: 650px) {
+      width: 150px;
+      height: 150px;
+    }
   }
   &:hover {
     .photo {
       filter: grayscale(0%);
     }
+  }
+}
+
+.resources {
+  margin: 40px 0;
+  a {
+    display: block;
+    margin: 0.5rem;
+  }
+  @media (min-width: 650px) {
+    display: flex;
   }
 }
