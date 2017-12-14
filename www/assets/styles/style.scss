@@ -2,35 +2,21 @@ html {
   font-family: 'Slabo 27px', serif;
   color: white;
   background: black;
-  @media (min-width: 650px) {
-    font-size: 1.2rem;
-  }
 }
 
 body {
-  max-width: 755px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0;
+  font-size: 20px;
 }
 
-body > {
-  header {
-    margin: 50px 0;
-  }
-  section {
-    margin: 50px 0;
-    max-width: 650px;
-    p {
-      line-height: 1.75;
-      background-color: black;
-      box-shadow: 0 0 30px 10px black;
-    }
-  }
-  footer {
-    margin: 40px 30px 40px 0;
-    font-size: 0.8rem;
-    opacity: 0.3;
-  }
+header {
+  margin: 50px 0;
+}
+footer {
+  margin: 40px 30px 40px 0;
+  font-size: 0.8rem;
+  opacity: 0.3;
 }
 
 h1 {
@@ -75,37 +61,58 @@ a.full-link {
 }
 
 .introduction {
-  margin: 40px 0;
+  margin: 100px auto;
+  text-align: center;
   h1 {
-    font-size: 11.5vw;
-    margin: 0;
-    @media (min-width: 650px) {
-      margin-left: -6px;
-      font-size: 5rem;
-    }
+    font-size: 8vw;
+    margin: 0 auto;
   }
   .subheadline {
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: normal;
     text-align: center;
-    @media (min-width: 650px) {
-      font-size: 1.5rem;
-      margin-top: -5px;
-    }
+
   }
 }
 
-.definition {
-  margin: 20px 0;
-  .definition-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    opacity: 0.7;
+section.full {
+  width: 100%;
+  background-color: black;
+  padding: 50px 0;
+}
+
+.section-content {
+  padding: 20px;
+  padding-left: 5%;
+  max-width: 900px;
+}
+
+.section-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  .section-text {
+    width: 70%;
   }
-  .definition-text {
-    opacity: 0.6;
+  img {
+    width: 20%;
   }
 }
+
+
+
+
+// .definition {
+//   margin: 20px 0;
+//   .definition-title {
+//     font-size: 1.2em;
+//     font-weight: bold;
+//     opacity: 0.7;
+//   }
+//   .definition-text {
+//     opacity: 0.6;
+//   }
+// }
 
 @keyframes twinkle {
     from { background-position:0 0; }
@@ -153,63 +160,63 @@ a.full-link {
   z-index: 0;
   animation: clouds 200s linear infinite;
 }
-
-blockquote {
-  margin: 40px 0;
-  padding: 0 20px;
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.team {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.member-listing {
-  position: relative;
-  margin: 0.5rem;
-  transition: all 0.5s;
-  overflow: hidden;
-  h3, .job-title {
-    z-index: 1;
-    margin: 0;
-    padding: 0;
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-  }
-  h3 {
-    margin-top: 0.5rem;
-  }
-  .job-title {
-    margin-bottom: 0.5rem;
-  }
-  .photo {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
-    @media (min-width: 650px) {
-      width: 150px;
-      height: 150px;
-    }
-  }
-  &:hover {
-    .photo {
-      filter: grayscale(0%);
-    }
-  }
-}
-
-.resources {
-  margin: 40px 0;
-  a {
-    display: block;
-    margin: 0.5rem;
-  }
-  @media (min-width: 650px) {
-    display: flex;
-  }
-}
+//
+// blockquote {
+//   margin: 40px 0;
+//   padding: 0 20px;
+//   border-left: 1px solid rgba(255, 255, 255, 0.5);
+// }
+//
+// .team {
+//   display: flex;
+//   justify-content: flex-start;
+//   flex-wrap: wrap;
+// }
+//
+// .member-listing {
+//   position: relative;
+//   margin: 0.5rem;
+//   transition: all 0.5s;
+//   overflow: hidden;
+//   h3, .job-title {
+//     z-index: 1;
+//     margin: 0;
+//     padding: 0;
+//     background: rgba(0, 0, 0, 0.6);
+//     width: 100%;
+//   }
+//   h3 {
+//     margin-top: 0.5rem;
+//   }
+//   .job-title {
+//     margin-bottom: 0.5rem;
+//   }
+//   .photo {
+//     width: 100px;
+//     height: 100px;
+//     background-color: #ccc;
+//     background-size: cover;
+//     background-position: center;
+//     filter: grayscale(100%);
+//     @media (min-width: 650px) {
+//       width: 150px;
+//       height: 150px;
+//     }
+//   }
+//   &:hover {
+//     .photo {
+//       filter: grayscale(0%);
+//     }
+//   }
+// }
+//
+// .resources {
+//   margin: 40px 0;
+//   a {
+//     display: block;
+//     margin: 0.5rem;
+//   }
+//   @media (min-width: 650px) {
+//     display: flex;
+//   }
+// }

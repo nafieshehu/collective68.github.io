@@ -21,6 +21,6 @@
   },
   "homepage": "https://candlewaster.co",
   "dependencies": {
-    "harp": "^0.20.3"
+    "harp": "latest"
   }
 }
