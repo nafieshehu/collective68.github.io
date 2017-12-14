@@ -13,11 +13,6 @@ body {
 header {
   margin: 50px 0;
 }
-footer {
-  margin: 40px 30px 40px 0;
-  font-size: 0.8rem;
-  opacity: 0.3;
-}
 
 h1 {
   font-family: 'Alice', serif;
@@ -77,7 +72,6 @@ a.full-link {
 
 section.full {
   width: 100%;
-  background-color: black;
   padding: 50px 0;
 }
 
@@ -99,20 +93,12 @@ section.full {
   }
 }
 
+section.black {
+  background-color: black;
+}
 
 
 
-// .definition {
-//   margin: 20px 0;
-//   .definition-title {
-//     font-size: 1.2em;
-//     font-weight: bold;
-//     opacity: 0.7;
-//   }
-//   .definition-text {
-//     opacity: 0.6;
-//   }
-// }
 
 @keyframes twinkle {
     from { background-position:0 0; }
@@ -160,6 +146,18 @@ section.full {
   z-index: 0;
   animation: clouds 200s linear infinite;
 }
+
+footer {
+  width: 100%;
+  bottom: 0px;
+  margin-top: 50px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+}
+
 //
 // blockquote {
 //   margin: 40px 0;
@@ -218,5 +216,18 @@ section.full {
 //   }
 //   @media (min-width: 650px) {
 //     display: flex;
+//   }
+// }
+
+
+// .definition {
+//   margin: 20px 0;
+//   .definition-title {
+//     font-size: 1.2em;
+//     font-weight: bold;
+//     opacity: 0.7;
+//   }
+//   .definition-text {
+//     opacity: 0.6;
 //   }
 // }
