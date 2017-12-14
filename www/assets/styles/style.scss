@@ -85,11 +85,12 @@ a.full-link {
     }
   }
   .subheadline {
-    font-size: 5.5vw;
+    font-size: 1.5rem;
     font-weight: normal;
+    text-align: center;
     @media (min-width: 650px) {
-      font-size: 2rem;
-      margin-top: -12px;
+      font-size: 1.5rem;
+      margin-top: -5px;
     }
   }
 }
@@ -122,7 +123,6 @@ a.full-link {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
   display: block;
   pointer-events: none;
 }
