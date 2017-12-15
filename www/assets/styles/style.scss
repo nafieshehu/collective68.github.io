@@ -84,6 +84,17 @@ footer {
 
 ul.links {
   text-align: right;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: #4A9DA7;
+    }
+  }
+}
+
+.external-logo {
+  width: 20px;
+  height: 20px;
 }
 
 
