@@ -58,8 +58,15 @@
   background-color: lightgrey;
 }
 
-.card-content {
+.profile.card-content {
+  margin-left: 250px;
+}
+
+.about.card-content {
   margin-left: 100px;
+}
+
+.card-content {
   margin-top: 0px;
   height: 300px;
   background-color: #f6f6f6;
@@ -86,6 +93,20 @@
 
 #open-source {
   background-image: url("../images/6.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+#mk-profile {
+  background-image: url("/media/images/marykate.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+#alex-profile {
+  background-image: url("/media/images/alex.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
