@@ -39,35 +39,53 @@
   background-color: #4A9DA7;
 }
 
-.quote {
+.wide-image {
   width: 100%;
   height: 500px;
   text-align: center;
   margin: 0 auto;
   background-color: #4A9DA7;
-  background-image: url("../images/8.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.dark {
-  background-color: rgba(0,0,35,.4);
-  padding: 200px 0;
-  padding-bottom: 104px;
+#lennon {
+  background-image: url("../images/8.jpg");
 }
 
-.quote p {
+#process {
+  background-image: url("../images/11.jpg");
+}
+
+.dark {
+  background-color: rgba(0,0,35,.4);
+  height: 500px;
+}
+
+.wide-image p {
   font-size: 32px;
   height: 50px;
   color: white;
   text-shadow: 1px 1px #000000;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 200px;
 }
 
-.about-section {
+cite {
+  display: block;
+  padding: 20px;
+}
+
+.info-section {
   margin: 50px auto;
   padding: 20px;
   padding-bottom: 100px;
+}
+
+.services-content .info-section {
+  padding-bottom: 0px;
 }
 
 .about-section:last-of-type {
@@ -80,17 +98,31 @@
   text-shadow: 1px 1px #000000;
 }
 
+.get-quote {
+  margin: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .cards {
   display: flex;
   justify-content: space-around;
 }
 
 .card {
-  width: 500px;
-  height: 300px;
   background-color: lightgrey;
   border-radius: 6px;
   box-shadow: 5px 5px rgba(0,0,0,.2);
+}
+
+.about.card {
+  width: 500px;
+  height: 300px;
+}
+
+.services.card {
+  width: 300px;
+  height: 300px;
 }
 
 .profile.card-content {
