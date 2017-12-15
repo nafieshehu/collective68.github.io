@@ -1,36 +1,38 @@
 {% extends "_base.njk" %}
 
 {% block extra_styles %}
-<link rel="stylesheet" href="/assets/styles/template_styles.css">
+  <link rel="stylesheet" href="/assets/styles/template_styles.css">
 {% endblock %}
 
 {% block content %}
-<header>
+  <header>
 
-  <div class="background">
-    <div class="starfield"></div>
-    <div class="twinkle"></div>
-    <div class="clouds"></div>
-  </div>
-  <nav>
-    <div class="nav">
-      <ul>
-        <li><a href="/services" class="button">Services</a></li>
-        <li><a href="/about" class="button">About</a></li>
-        <li><a href="/portfolio" class="button">Portfolio</a></li>
-      </ul>
+    <div class="background">
+      <div class="starfield"></div>
+      <div class="twinkle"></div>
+      <div class="clouds"></div>
     </div>
-  </nav>
-</header>
+    <nav>
+      <div class="nav">
+        <ul>
+          <li><a href="/services" class="button">Services</a></li>
+          <li><a href="/about" class="button">About</a></li>
+          <li><a href="/portfolio" class="button">Portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-<div class="title">
-  <div class="logo">
-    <a href="/">W</a>
-    <div class="logo-subtitle">Can"dle*wast`er (n.)</div>
+  <div class="title">
+    <div class="logo">
+      <a href="/">W</a>
+      <div class="logo-subtitle">Can"dle*wast`er (n.)</div>
+    </div>
+    <h1 class="page-title">{% block title %}{% endblock %}</h1>
   </div>
-  <h1 class="page-title">{% block title %}{% endblock %}</h1>
-</div>
 
-{% block moreContent %}{% endblock %}
+  <div class="page-content">
+    {% block moreContent %}{% endblock %}
+  </div>
 
 {% endblock %}
