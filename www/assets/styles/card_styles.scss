@@ -5,6 +5,13 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 600px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .card {
   background-color: lightgrey;
   border-radius: 6px;
@@ -34,6 +41,14 @@
   height: 300px;
 }
 
+@media (max-width: 600px) {
+  .about.card {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
 .about.card-content {
   margin-left: 100px;
 }
@@ -42,15 +57,39 @@
   width: 40%;
 }
 
+@media (max-width: 600px) {
+  .profile.card {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
 .profile.card-content {
   width: auto;
   margin-left: 200px;
+}
+
+@media (max-width: 600px) {
+  .profile.card-content {
+    width: auto;
+    margin-left: 0px;
+  }
 }
 
 .services.card {
   width: 30%;
   height: 300px;
 }
+
+@media (max-width: 600px) {
+  .services.card {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
 
 // .portfolio.card {
 //   width: 30%;
