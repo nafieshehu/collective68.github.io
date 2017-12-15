@@ -91,7 +91,7 @@ section.full:last-of-type {
 
 .dark {
   background-color: rgba(0,0,35,.6);
-  padding: 70px 0;
+  padding: 150px 0;
 }
 
 .section-content h2 {
@@ -152,6 +152,7 @@ footer {
 .columns {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .footer-column {
