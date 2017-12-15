@@ -16,11 +16,11 @@
 
 section.full {
   width: 100%;
-  margin-bottom: 200px;
 }
 
-section.full:last-of-type {
-  margin-bottom: 50px;
+section.blue {
+  background-color: #4A9DA7;
+  min-height: 200px;
 }
 
 .section-content {
@@ -62,7 +62,7 @@ section.black {
   a {
     color: white;
     &:hover {
-        color: darkgray;
+        color: #4A9DA7;
       }
   }
 }
