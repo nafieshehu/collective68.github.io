@@ -1,6 +1,6 @@
-nav {
+.title {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 95%;
   margin: 0 auto;
   margin-top: -20px;
@@ -9,13 +9,25 @@ nav {
 .logo {
   font-size: 10rem;
   font-weight: bold;
+  position: absolute;
+  left: 20px;
+  top: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
 }
 
 .logo-subtitle {
   font-size: 14px;
   margin-top: -35px;
   padding: 0px;
+}
+
+.page-title {
+  align-self: flex-end;
 }
