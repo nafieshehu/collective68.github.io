@@ -77,18 +77,25 @@ nav {
 
 section.full {
   width: 100%;
-  padding: 70px 0;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+}
+
+section.full:last-of-type {
+  margin-bottom: 50px;
 }
 
 .section-content {
-  padding: 50px;
+  padding: 30px;
   padding-left: 5%;
-  background-color: rgba(0,0,0,.6)
+}
+
+.dark {
+  background-color: rgba(0,0,35,.6);
+  padding: 70px 0;
 }
 
 .section-content h2 {
-
+  text-shadow: 2px 2px #000000;
 }
 
 .section-info {
@@ -99,15 +106,15 @@ section.full {
   max-width: 900px;
 
   .section-text {
-    width: 70%;
+    width: 80%;
     p {
       margin: 0;
       margin-bottom: 20px;
+      text-shadow: 1px 1px #000000;
+      font-size: 22px;
     }
   }
-  img {
-    width: 20%;
-  }
+
 }
 
 section.black {
