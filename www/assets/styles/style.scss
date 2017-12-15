@@ -77,21 +77,33 @@ nav {
 
 section.full {
   width: 100%;
-  padding: 50px 0;
+  padding: 70px 0;
+  margin-bottom: 100px;
 }
 
 .section-content {
-  padding: 20px;
+  padding: 50px;
   padding-left: 5%;
-  max-width: 900px;
+  background-color: rgba(0,0,0,.6)
+}
+
+.section-content h2 {
+
 }
 
 .section-info {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  margin-top: 50px;
+  max-width: 900px;
+
   .section-text {
     width: 70%;
+    p {
+      margin: 0;
+      margin-bottom: 20px;
+    }
   }
   img {
     width: 20%;
@@ -99,8 +111,60 @@ section.full {
 }
 
 section.black {
-  background-color: black;
+  background-color: lightgray;
+  color: white;
+  a {
+    color: white;
+    &:hover {
+        color: darkgray;
+      }
+  }
 }
+
+#social-background {
+  background-image: url("../images/4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#app-background {
+  background-image: url("../images/1.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+footer {
+  width: 100%;
+  bottom: 0px;
+  margin-top: 50px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+    padding: 20px;
+    max-width: 50%;
+    ul {
+      list-style: none;
+    }
+    li {
+      margin-bottom: 20px;
+    }
+}
+
+ul.links {
+  text-align: right;
+}
+
+
+
+
 
 
 
@@ -152,16 +216,7 @@ section.black {
   animation: clouds 200s linear infinite;
 }
 
-footer {
-  width: 100%;
-  bottom: 0px;
-  margin-top: 50px;
-}
 
-.columns {
-  display: flex;
-  justify-content: space-around;
-}
 
 //
 // blockquote {
