@@ -10,7 +10,24 @@
     font-size: 20px;
     font-weight: normal;
     text-align: center;
+  }
+}
 
+@media (max-width: 600px) {
+  .introduction {
+    margin: 40px auto 10px auto;
+    text-align: center;
+    h1 {
+      font-size: 11vw;
+      margin: 0 auto;
+    }
+    .subheadline {
+      font-size: 18px;
+      width: 80%;
+      font-weight: normal;
+      text-align: center;
+      margin: 20px auto;
+    }
   }
 }
 
@@ -33,6 +50,13 @@ section.blue {
   padding: 150px 0;
 }
 
+@media (max-width: 600px) {
+  .dark {
+    background-color: rgba(0,0,35,.6);
+    padding: 50px 0;
+  }
+}
+
 .section-content h2 {
   text-shadow: 2px 2px #000000;
 }
@@ -53,7 +77,6 @@ section.blue {
       font-size: 22px;
     }
   }
-
 }
 
 section.black {
@@ -66,6 +89,7 @@ section.black {
       }
   }
 }
+
 
 #social-background {
   background-image: url("../images/police.jpg");
