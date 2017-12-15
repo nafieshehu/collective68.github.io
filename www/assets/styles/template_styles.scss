@@ -35,4 +35,58 @@
 .page-content {
   min-height: 300px;
   background-color: black;
+  padding: 20px;
+}
+
+.about-section {
+  margin: 50px auto;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  padding-left: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  background-color: lightgrey;
+}
+
+.card-content {
+  margin-left: 100px;
+  margin-top: 0px;
+  height: 300px;
+  background-color: #f6f6f6;
+  color: black;
+
+  h3 {
+    margin: 0px auto;
+    padding: 20px;
+  }
+
+  p {
+    margin: 0px auto;
+    padding: 20px;
+  }
+
+}
+
+#social-good {
+  background-image: url("../images/5.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+#open-source {
+  background-image: url("../images/6.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
 }
