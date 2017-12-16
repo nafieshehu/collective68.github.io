@@ -1,0 +1,62 @@
+{% extends "_base.njk" %}
+
+{% block extra_styles %}
+  <link rel="stylesheet" href="/assets/styles/home_styles.css">
+{% endblock %}
+
+{% block content %}
+  <body>
+    <header>
+      <div class="background">
+        <div class="starfield"></div>
+        <div class="twinkle"></div>
+        <div class="clouds"></div>
+      </div>
+      <nav>
+        <div class="nav">
+          <ul>
+            <li><a href="/services" class="button">Services</a></li>
+            <li><a href="/about" class="button">About</a></li>
+            {# This page is currently disabled #}
+            {# <li><a href="/portfolio" class="button">Portfolio</a></li> #}
+          </ul>
+        </div>
+      </nav>
+      <div class="introduction">
+        <h1>Candlewaster</h1>
+        <p class="subheadline">The free software collective that never sleeps</p>
+      </div>
+    </header>
+
+    <section class="full black" id="social-background">
+      <div class="dark">
+        <div class="section-content">
+          <h2>Technology as a Catalyst for Good</h2>
+          <div class="section-info">
+            <div class="section-text">
+              <p>We believe in shaping the future we want through responsible technology. We work with non-profits and activists to create websites and apps that will improve our local and global community. Our clients are people who have seen problems, and are taking action to fix them.</p>
+              <p>Our work is always open source, and we beleive that liberated software is a modern basic right.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="full blue">
+    </section>
+
+    <section class="full black" id="app-background">
+      <div class="dark">
+        <div class="section-content">
+          <h2>Web Applications for the Mobile Era</h2>
+          <div class="section-info">
+            <div class="section-text">
+              <p>We build beautiful mobile-first web applications in Django that will make your idea a reality. With a focus on user-experience, our apps feel clean and simple no matter the level of back-end complexity.</p>
+              <p>View our work <a href="https://github.com/candlewaster" target="_bank">here</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

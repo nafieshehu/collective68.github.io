@@ -1,0 +1,107 @@
+
+.introduction {
+  margin: 120px auto;
+  text-align: center;
+  h1 {
+    font-size: 8vw;
+    margin: 0 auto;
+  }
+  .subheadline {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .introduction {
+    margin: 40px auto 10px auto;
+    text-align: center;
+    h1 {
+      font-size: 11vw;
+      margin: 0 auto;
+    }
+    .subheadline {
+      font-size: 18px;
+      width: 80%;
+      font-weight: normal;
+      text-align: center;
+      margin: 20px auto;
+    }
+  }
+}
+
+section.full {
+  width: 100%;
+}
+
+section.blue {
+  background-color: #4A9DA7;
+  min-height: 200px;
+}
+
+.section-content {
+  padding: 30px;
+  padding-left: 5%;
+}
+
+.dark {
+  background-color: rgba(0,0,35,.6);
+  padding: 150px 0;
+}
+
+@media (max-width: 600px) {
+  .dark {
+    background-color: rgba(0,0,35,.6);
+    padding: 50px 0;
+  }
+}
+
+.section-content h2 {
+  text-shadow: 2px 2px #000000;
+}
+
+.section-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 50px;
+  max-width: 900px;
+
+  .section-text {
+    width: 80%;
+    p {
+      margin: 0;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px #000000;
+      font-size: 22px;
+    }
+  }
+}
+
+section.black {
+  background-color: lightgray;
+  color: white;
+  a {
+    color: white;
+    &:hover {
+        color: #4A9DA7;
+      }
+  }
+}
+
+
+#social-background {
+  background-image: url("../images/police.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#app-background {
+  background-image: url("../images/bus.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}

@@ -1,0 +1,151 @@
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card {
+  background-color: lightgrey;
+  border-radius: 6px;
+  box-shadow: 5px 5px rgba(0,0,0,.2);
+}
+
+.card-content {
+  margin-top: 0px;
+  height: 300px;
+  background-color: #f6f6f6;
+  color: black;
+
+  h3 {
+    margin: 0px auto;
+    padding: 20px;
+  }
+
+  p {
+    margin: 0px auto;
+    padding: 20px;
+  }
+
+}
+
+.about.card {
+  width: 30%;
+  height: 300px;
+}
+
+@media (max-width: 600px) {
+  .about.card {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.about.card-content {
+  margin-left: 100px;
+}
+
+.profile.card {
+  width: 40%;
+}
+
+@media (max-width: 600px) {
+  .profile.card {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.profile.card-content {
+  width: auto;
+  margin-left: 200px;
+}
+
+@media (max-width: 600px) {
+  .profile.card-content {
+    width: auto;
+    margin-left: 0px;
+  }
+}
+
+.services.card {
+  width: 30%;
+  height: 300px;
+}
+
+@media (max-width: 600px) {
+  .services.card {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+// Unused while portfolio page is down:
+
+// .portfolio.card {
+//   width: 30%;
+//   height: 300px;
+//   .card-content {
+//     display:none;
+//   }
+//   .card-img {
+//     margin-top: 0px;
+//     height: 300px;
+//     background-image: url("../images/march.jpg");
+//   }
+// }
+//
+// .portfolio.card.flipped {
+//   .card-content {
+//     display: block;
+//   }
+//   .card-img {
+//     display: none;
+//   }
+// }
+
+
+#social-good {
+  background-image: url("../images/march.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+#open-source {
+  background-image: url("../images/computer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+#worker-collective {
+  background-image: url("../images/together.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+#mk-profile {
+  background-image: url("../images/marykate.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+#alex-profile {
+  background-image: url("../images/alex.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}

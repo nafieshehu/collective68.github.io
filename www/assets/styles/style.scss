@@ -2,34 +2,23 @@ html {
   font-family: 'Slabo 27px', serif;
   color: white;
   background: black;
-  @media (min-width: 650px) {
-    font-size: 1.2rem;
-  }
 }
 
 body {
-  max-width: 755px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0;
+  font-size: 20px;
 }
 
-body > {
+header {
+  margin: 50px 0;
+}
+
+@media (max-width: 600px) {
   header {
-    margin: 50px 0;
-  }
-  section {
-    margin: 50px 0;
-    max-width: 650px;
-    p {
-      line-height: 1.75;
-      background-color: black;
-      box-shadow: 0 0 30px 10px black;
-    }
-  }
-  footer {
-    margin: 40px 30px 40px 0;
-    font-size: 0.8rem;
-    opacity: 0.3;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20px auto;
   }
 }
 
@@ -37,6 +26,12 @@ h1 {
   font-family: 'Alice', serif;
   text-transform: uppercase;
   font-size: 5rem;
+}
+
+@media (max-width: 600px) {
+  .title h1 {
+    font-size: 3rem;
+  }
 }
 
 h2 {
@@ -53,58 +48,114 @@ a.button {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   padding: 10px 20px;
-  border: 1px solid white;
+  border: 1px solid lightgrey;
   border-radius: 4px;
-  margin: 20px 0;
   transition: all 0.4s;
   &:hover {
-    background: white;
+    background: lightgrey;
     color: black;
   }
 }
 
-a.full-link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+nav {
+  top: 0px;
   width: 100%;
-  height: 100%;
-  z-index: 1;
-}
 
-.introduction {
-  margin: 40px 0;
-  h1 {
-    font-size: 11.5vw;
-    margin: 0;
-    @media (min-width: 650px) {
-      margin-left: -6px;
-      font-size: 5rem;
-    }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
   }
-  .subheadline {
-    font-size: 5.5vw;
-    font-weight: normal;
-    @media (min-width: 650px) {
-      font-size: 2rem;
-      margin-top: -12px;
-    }
+  li {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
   }
 }
 
-.definition {
-  margin: 20px 0;
-  .definition-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    opacity: 0.7;
-  }
-  .definition-text {
-    opacity: 0.6;
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    ul {
+      width: 100%;
+      padding: 0px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      justify-content: center;
+    }
   }
 }
+
+footer {
+  width: 100%;
+  bottom: 0px;
+  background-color: #000000;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
+.footer-column {
+    padding: 20px;
+    max-width: 50%;
+    ul {
+      list-style: none;
+    }
+    li {
+      margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+  .footer-column {
+      padding: 0px;
+      max-width: 100%;
+  }
+}
+
+ul.links {
+  text-align: right;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: #4A9DA7;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  ul.links {
+    text-align: left;
+    a {
+      text-decoration: none;
+      &:hover {
+        color: #4A9DA7;
+      }
+    }
+  }
+}
+
+.external-logo {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+
+
 
 @keyframes twinkle {
     from { background-position:0 0; }
@@ -122,7 +173,6 @@ a.full-link {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
   display: block;
   pointer-events: none;
 }
@@ -152,64 +202,4 @@ a.full-link {
   background: transparent url("../images/clouds.png") repeat top center;
   z-index: 0;
   animation: clouds 200s linear infinite;
-}
-
-blockquote {
-  margin: 40px 0;
-  padding: 0 20px;
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.team {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.member-listing {
-  position: relative;
-  margin: 0.5rem;
-  transition: all 0.5s;
-  overflow: hidden;
-  h3, .job-title {
-    z-index: 1;
-    margin: 0;
-    padding: 0;
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-  }
-  h3 {
-    margin-top: 0.5rem;
-  }
-  .job-title {
-    margin-bottom: 0.5rem;
-  }
-  .photo {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
-    @media (min-width: 650px) {
-      width: 150px;
-      height: 150px;
-    }
-  }
-  &:hover {
-    .photo {
-      filter: grayscale(0%);
-    }
-  }
-}
-
-.resources {
-  margin: 40px 0;
-  a {
-    display: block;
-    margin: 0.5rem;
-  }
-  @media (min-width: 650px) {
-    display: flex;
-  }
 }

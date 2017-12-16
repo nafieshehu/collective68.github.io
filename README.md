@@ -1,6 +1,6 @@
 Candlewaster Website
 ====================
-This is the website for [candlewaster.co](http://candlewaster.co). It's a static site that runs on Harp.
+This is the website for [candlewaster.co](http://candlewaster.co). It's a static site that runs on wick.
 
 License
 =======
