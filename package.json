@@ -1,6 +1,6 @@
 {
   "name": "candlewaster.co",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "engines": {
     "node": "4.4.x"
   },
@@ -21,7 +21,6 @@
   },
   "homepage": "https://candlewaster.co",
   "dependencies": {
-    "express": "^4.13.4",
     "wick": "latest"
   }
 }
